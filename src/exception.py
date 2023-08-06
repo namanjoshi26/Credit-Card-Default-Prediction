@@ -1,5 +1,6 @@
 import sys
 import logging
+from src.logger import logging
 def error_message_detail(error, error_detail:sys):
     #error_detail will be present inside the sys
     _,_,exc_tb = error_detail.exc_info()
