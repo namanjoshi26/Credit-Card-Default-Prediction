@@ -44,7 +44,7 @@ class DataTransformation:
         This function is responsible for data transformation"""
         try:
             numerical_columns = []
-            for i in range(1,7):
+            for i in range(1,4):
                 feature1='BILL_AMT'+str(i)
                 feature2='PAY_AMT'+str(i)
                 numerical_columns.append(feature1)
@@ -84,10 +84,13 @@ class DataTransformation:
             test_df['MARRIAGE']=test_df['MARRIAGE'].replace({0:3})
             train_df['EDUCATION']=train_df['EDUCATION'].replace({0:4,5:4,6:4})
             test_df['EDUCATION']=test_df['EDUCATION'].replace({0:4,5:4,6:4})
+            features_to_drop = ['BILL_AMT4', 'BILL_AMT5', 'BILL_AMT6','PAY_4','PAY_5','PAY_6']
+            train_df = train_df.drop(features_to_drop, axis=1)
+            test_df = test_df.drop(features_to_drop, axis=1)
 
             target_column_name="default payment next month"
             numerical_columns = []
-            for i in range(1,7):
+            for i in range(1,4):
                 feature1='BILL_AMT'+str(i)
                 feature2='PAY_AMT'+str(i)
                 numerical_columns.append(feature1)
