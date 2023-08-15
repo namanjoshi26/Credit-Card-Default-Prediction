@@ -13,6 +13,7 @@ ID: ID of each client
 
 LIMIT_BAL: Amount of given credit in NT dollars (includes individual and family/supplementary credit
 
+
 SEX: Gender (1=male, 2=female)
 
 EDUCATION: (1=graduate school, 2=university, 3=high school, 4=others, 5=unknown, 6=unknown)
@@ -57,9 +58,19 @@ PAY_AMT5: Amount of previous payment in May, 2005 (NT dollar)
 
 PAY_AMT6: Amount of previous payment in April, 2005 (NT dollar)
 
-default.payment.next.month: Default payment (1=yes, 0=no)    ### Target variable
+default.payment.next.month: Default payment (1=yes, 0=no)    Target variable
 
 
 Complete Machine Learning implementation and experimentation is present in Notebooks/project.ipynb
+Major Milestones in this project are as below:
+1) Github And Code Set Up
+2) Project Structure, Logging And Exception Handling
+3) Project Problem Statement,EDA And Model Training
+4) Data Ingestion Implementation
+5) Data Transformation Implementation
+6) Model Training And Model Evaluation
+7) Model Hyperparameter Tuning
+8) Create Prediction Pipeline Using Flask Web APP
+9) Deployment In AWS Beanstalk Using CD Pipelines
 
 
